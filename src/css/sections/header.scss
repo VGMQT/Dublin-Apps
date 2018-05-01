@@ -1,4 +1,5 @@
 .header{
+  margin-bottom: rem(50px);
   .container{
     display: flex;
     justify-content: flex-start;
@@ -38,7 +39,6 @@
 }
 
 .nav__list{
-  @include alegreya();
   display: flex;
   .active{
     background: $nav-color;

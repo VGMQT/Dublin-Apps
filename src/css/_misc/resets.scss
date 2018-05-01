@@ -1,0 +1,23 @@
+//----------------------<<slider>>----------------------\\
+.slick-next:before, .slick-prev:before {
+  content: "";
+}
+
+.slick-next, .slick-next:focus, .slick-next:hover, .slick-prev, .slick-prev:focus, .slick-prev:hover {
+  border-radius: 50%;
+  color: transparent;
+  outline: none;
+}
+
+.slick-next, .slick-prev {
+  height: rem(40px);
+  width: rem(40px);
+}
+
+.slick-next, .slick-next:focus, .slick-next:hover{
+  background: url('../assets/img/misc/slider-arrow-r.png') no-repeat center;
+}
+
+.slick-prev, .slick-prev:focus, .slick-prev:hover{
+  background: url('../assets/img/misc/slider-arrow-l.png') no-repeat center;
+}

@@ -5,4 +5,9 @@ $(document).ready(function () {
         svg4everybody();
     }());
 
+    //----------------------<<slider>>----------------------\\
+    (function () {
+        $('.slider').slick();
+    }());
+
 });

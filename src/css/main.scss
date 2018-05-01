@@ -7,11 +7,15 @@ $bg-color: #1b1b2e;
 @import "_misc/mixins.scss";
 @import "_misc/fonts.scss";
 @import "_misc/adjustment.scss";
+@import "_misc/slick-theme.scss";
+@import "_misc/resets.scss";
 
 //----------------------<<sections>>----------------------\\
 @import "sections/header.scss";
+@import "sections/slider.scss";
 
 .main-content{
+  @include alegreya();
   padding-top: 35px;
   background: rgba(27,27,46,1);
   background: linear-gradient(to bottom, rgba(27,27,46,1) 0%, rgba(231,232,234,1) 100%);

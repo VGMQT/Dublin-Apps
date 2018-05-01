@@ -1,5 +1,5 @@
 {
-  "name": "DublinApps",
+  "name": "dublinapps",
   "description": "iOS applications store",
   "main": "index.html",
   "authors": [
@@ -19,6 +19,7 @@
   ],
   "dependencies": {
     "svg4everybody": "^2.1.9",
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "slick-carousel": "slick-slide#^1.8.1"
   }
 }
