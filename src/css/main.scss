@@ -1,4 +1,19 @@
+//----------------------<<vars>>----------------------\\
+$nav-color: #d7d7e3;
+$bg-color: #1b1b2e;
+
 //----------------------<<misc>>----------------------\\
 @import "_misc/normalize.scss";
 @import "_misc/mixins.scss";
+@import "_misc/fonts.scss";
 @import "_misc/adjustment.scss";
+
+//----------------------<<sections>>----------------------\\
+@import "sections/header.scss";
+
+.main-content{
+  padding-top: 35px;
+  background: rgba(27,27,46,1);
+  background: linear-gradient(to bottom, rgba(27,27,46,1) 0%, rgba(231,232,234,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1b2e', endColorstr='#e7e8ea', GradientType=0 );
+}
