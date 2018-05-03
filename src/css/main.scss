@@ -1,23 +1,31 @@
 //----------------------<<vars>>----------------------\\
 $nav-color: #d7d7e3;
 $bg-color: #1b1b2e;
+$maintext: #8c8c92;
+$maintext-dark: #505050;
+$accentcolor: #5f7390;
 
 //----------------------<<misc>>----------------------\\
 @import "_misc/normalize.scss";
 @import "_misc/mixins.scss";
 @import "_misc/fonts.scss";
 @import "_misc/adjustment.scss";
+@import "_misc/sprite.scss";
 @import "_misc/slick-theme.scss";
 @import "_misc/resets.scss";
 
 //----------------------<<sections>>----------------------\\
 @import "sections/header.scss";
 @import "sections/slider.scss";
+@import "sections/top-apps.scss";
+@import "sections/product.scss";
+@import "sections/acco.scss";
+@import "sections/footer.scss";
 
 .main-content{
   @include alegreya();
-  padding-top: 35px;
-  background: rgba(27,27,46,1);
-  background: linear-gradient(to bottom, rgba(27,27,46,1) 0%, rgba(231,232,234,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1b2e', endColorstr='#e7e8ea', GradientType=0 );
+  padding: rem(35px) 0;
+  background: rgba(27,27,45,1);
+  background: linear-gradient(to bottom, rgba(27,27,45,1) 0%, rgba(27,27,45,1) 6%, rgba(231,232,234,1) 39%, rgba(231,232,234,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1b2d', endColorstr='#e7e8ea', GradientType=0 );
 }

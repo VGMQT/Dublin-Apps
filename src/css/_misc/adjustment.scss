@@ -1,6 +1,6 @@
 //----------------------<<vars>>----------------------\\
 $container-width: 1000px;
-$footer-height: 300px;
+$footer-height: 340px;
 
 //----------------------<<css>>----------------------\\
 html {
@@ -38,10 +38,6 @@ body, html {
   height: $footer-height;
   overflow: hidden;
   content: "";
-}
-
-.main-content {
-  padding-bottom: $footer-height;
 }
 
 .container {

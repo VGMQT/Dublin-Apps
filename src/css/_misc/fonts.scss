@@ -178,6 +178,9 @@
   @if $style == bold{
     font-family: 'overlockblack';
   }
+  @if $style == italic{
+    font-family: 'overlockitalic';
+  }
 }
 
 @mixin alegreya($style: regular) {

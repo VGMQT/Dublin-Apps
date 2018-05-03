@@ -1,23 +1,61 @@
 //----------------------<<slider>>----------------------\\
-.slick-next:before, .slick-prev:before {
-  content: "";
+.slider{
+  .slick-next:before, .slick-prev:before {
+    content: "";
+  }
+
+  .slick-next, .slick-next:focus, .slick-next:hover, .slick-prev, .slick-prev:focus, .slick-prev:hover {
+    border-radius: 50%;
+    color: transparent;
+    outline: none;
+    z-index: 10000;
+  }
+
+  .slick-next, .slick-prev {
+    width: 39px;
+    height: 39px;
+  }
+
+  .slick-next, .slick-next:focus, .slick-next:hover{
+    background: url('../assets/img/misc/spritesheet.png') no-repeat;
+    background-position: -10px -491px;
+    display: block;
+  }
+
+  .slick-prev, .slick-prev:focus, .slick-prev:hover{
+    background: url('../assets/img/misc/spritesheet.png') no-repeat;
+    background-position: -10px -432px;
+    display: block;
+  }
 }
 
-.slick-next, .slick-next:focus, .slick-next:hover, .slick-prev, .slick-prev:focus, .slick-prev:hover {
-  border-radius: 50%;
-  color: transparent;
-  outline: none;
-}
+//news slider
+.news-slider{
+  .slick-next:before, .slick-prev:before {
+    content: "";
+  }
 
-.slick-next, .slick-prev {
-  height: rem(40px);
-  width: rem(40px);
-}
+  .slick-next, .slick-next:focus, .slick-next:hover, .slick-prev, .slick-prev:focus, .slick-prev:hover {
+    border-radius: 50%;
+    color: transparent;
+    outline: none;
+    z-index: 10000;
+  }
 
-.slick-next, .slick-next:focus, .slick-next:hover{
-  background: url('../assets/img/misc/slider-arrow-r.png') no-repeat center;
-}
+  .slick-next, .slick-prev {
+    width: 24px;
+    height: 27px;
+  }
 
-.slick-prev, .slick-prev:focus, .slick-prev:hover{
-  background: url('../assets/img/misc/slider-arrow-l.png') no-repeat center;
+  .slick-next, .slick-next:focus, .slick-next:hover{
+    background: url('../assets/img/misc/spritesheet.png') no-repeat;
+    background-position: -10px -385px;
+    display: block;
+  }
+
+  .slick-prev, .slick-prev:focus, .slick-prev:hover{
+    background: url('../assets/img/misc/spritesheet.png') no-repeat;
+    background-position: -10px -338px;
+    display: block;
+  }
 }

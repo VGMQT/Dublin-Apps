@@ -1,0 +1,134 @@
+//----------------------<<top apps>>----------------------\\
+.apps-section{
+  margin-bottom: rem(45px);
+}
+
+.top-apps {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: rem(40px);
+}
+
+.app {
+  position: relative;
+  display: block;
+  width: rem(240px);
+  height: rem(160px);
+  border: 3px solid #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 1px 1px 50px rgba(#000000, .2);
+  background: rgba(255, 255, 255, 1);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(226, 226, 226, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e2e2e2', GradientType=0);
+  transition: transform .5s;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.app__pic {
+  position: relative;
+  height: rem(127px);
+}
+
+.app__pic-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+  max-width: 100%;
+}
+
+.app__pic-new {
+  position: absolute;
+  top: rem(-3px);
+  right: rem(-3px);
+}
+
+.app__title {
+  font-size: rem(18px);
+  color: $maintext;
+}
+
+//----------------------<<categories>>----------------------\\
+.categories__icon {
+  margin-right: rem(10px);
+  transition: transform .5s;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: rem(60px);
+}
+
+.categories__block {
+  display: flex;
+  flex-direction: column;
+  width: rem(300px);
+}
+
+.categories__title {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: rem(20px);
+  &:hover{
+    .categories__icon{
+      transform: scale(1.2);
+    }
+  }
+}
+
+.categories__title-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.title-main {
+  font-size: rem(25px);
+  color: $maintext-dark;
+}
+
+.title-submain {
+  font-size: rem(15px);
+  color: $accentcolor;
+}
+
+.desc {
+  font-size: rem(15px);
+  color: $maintext-dark;
+}
+
+//----------------------<<news slider>>----------------------\\
+.news-slide {
+  width: rem(600px);
+  margin: 0 auto;
+  background: rgba(236,237,239,0);
+  background: linear-gradient(to right, rgba(236,237,239,0) 0%, rgba(236,237,239,1) 24%, rgba(236,237,239,1) 51%, rgba(236,237,239,1) 79%, rgba(236,237,239,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ecedef', endColorstr='#ecedef', GradientType=1 );
+}
+
+.news-slide__inner {
+  width: rem(550px);
+  padding: rem(15px) 0;
+  margin: 0 auto;
+  color: $maintext;
+  text-align: center;
+  font-size: rem(16px);
+  a {
+    color: $accentcolor;
+    border-bottom: solid $accentcolor;
+    border-width: 0;
+    transition: all .1s;
+    &:hover{
+      border-width: 1px;
+    }
+  }
+}
+
+

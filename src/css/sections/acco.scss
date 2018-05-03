@@ -1,0 +1,56 @@
+.acco-list{
+  .active{
+    .acco-item__link {
+      color: $maintext-dark;
+      &:before {
+        content: '';
+        padding-right: rem(14px);
+        margin-right: rem(12px);
+        border-radius: 50%;
+        background: url(../assets/img/misc/spritesheet.png) no-repeat;
+        background-position: -10px -107px;
+        transition: all .2s;
+      }
+    }
+  }
+}
+
+.acco-item{
+  color: $maintext;
+  &:last-child{
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba($maintext, .2);
+  }
+  a{
+    color: inherit;
+  }
+  &:hover{
+    a{
+      color: $maintext-dark;
+    }
+  }
+}
+
+.acco-item__link{
+  padding: rem(10px);
+  display: inline-block;
+  border-top: 1px solid rgba($maintext, .2);
+  transition: all .5s;
+  &:before{
+    content: '';
+    padding-right: rem(14px);
+    margin-right: rem(12px);
+    border-radius: 50%;
+    background: url(../assets/img/misc/spritesheet.png) no-repeat;
+    background-position: -10px -141px;
+    transition: all .2s;
+  }
+  &:last-child{
+     border-bottom: 1px solid rgba($maintext, .2);
+  }
+}
+
+.acco-item__text{
+  display: none;
+  margin-bottom: rem(20px);
+}

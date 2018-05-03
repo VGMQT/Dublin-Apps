@@ -1,0 +1,78 @@
+.product-section{
+  margin-bottom: rem(45px);
+}
+
+.product__title{
+  width: rem(420px);
+  margin: 0 auto;
+}
+
+.product__main{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  .button{
+    position: static;
+    bottom: 0;
+    right: 0;
+    width: rem(130px);
+    margin-left: rem(25px);
+    font-size: rem(20px);
+    color: $nav-color;
+    &:after{
+      position: static;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      background: none;
+    }
+  }
+}
+
+.product__pic{
+  position: relative;
+  width: rem(380px);
+  height: rem(240px);
+  img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.product__text{
+  display: flex;
+  flex-direction: column;
+}
+
+.product__list{
+  margin-bottom: rem(25px);
+}
+
+.product__item{
+  margin-bottom: rem(10px);
+  color: $maintext;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  &:before{
+    content: '';
+    padding-right: rem(14px);
+    margin-right: rem(12px);
+    border-radius: 50%;
+    background: url(../assets/img/misc/spritesheet.png) no-repeat;
+    background-position: -10px -107px;
+  }
+}
+
+.product__buttons{
+  display: flex;
+  justify-content: flex-start;
+}

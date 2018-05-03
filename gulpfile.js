@@ -69,7 +69,7 @@ gulp.task('clean', function(){
 
 //----------------------<<engine tasks>>----------------------\\
 gulp.task('svgSpriteBuild', function() {
-    return gulp.src('src/assets/images/socials/*.svg')
+    return gulp.src('src/assets/img/svg/*.svg')
         .pipe(svgmin({
             js2svg: {
                 pretty: true
@@ -85,7 +85,7 @@ gulp.task('svgSpriteBuild', function() {
         }))
         .pipe(replace('&gt;', '>'))
         .pipe(svgSprite(svgspriteDest))
-        .pipe(gulp.dest('src/assets/images/socials/sprite/'));
+        .pipe(gulp.dest('src/assets/img/svg/sprite/'));
 });
 
 gulp.task('pug', function(){
