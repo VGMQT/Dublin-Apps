@@ -11,22 +11,24 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  .button{
+}
+
+.button_mini{
+  display: block;
+  position: static;
+  bottom: 0;
+  right: 0;
+  width: rem(130px);
+  margin-left: rem(25px);
+  font-size: rem(20px);
+  color: $nav-color;
+  &:after{
     position: static;
     bottom: 0;
     right: 0;
-    width: rem(130px);
-    margin-left: rem(25px);
-    font-size: rem(20px);
-    color: $nav-color;
-    &:after{
-      position: static;
-      bottom: 0;
-      right: 0;
-      width: 0;
-      height: 0;
-      background: none;
-    }
+    width: 0;
+    height: 0;
+    background: none;
   }
 }
 

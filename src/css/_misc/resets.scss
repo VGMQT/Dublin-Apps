@@ -1,5 +1,5 @@
 //----------------------<<slider>>----------------------\\
-.slider{
+.slider, .products-slider{
   .slick-next:before, .slick-prev:before {
     content: "";
   }
@@ -57,5 +57,15 @@
     background: url('../assets/img/misc/spritesheet.png') no-repeat;
     background-position: -10px -338px;
     display: block;
+  }
+}
+
+//productsslider
+.products-slider{
+  .slick-next {
+    right: -55px;
+  }
+  .slick-prev{
+    left: -55px;
   }
 }

@@ -6,21 +6,28 @@ $maintext-dark: #505050;
 $accentcolor: #5f7390;
 
 //----------------------<<misc>>----------------------\\
-@import "_misc/normalize.scss";
-@import "_misc/mixins.scss";
-@import "_misc/fonts.scss";
-@import "_misc/adjustment.scss";
-@import "_misc/sprite.scss";
-@import "_misc/slick-theme.scss";
-@import "_misc/resets.scss";
+@import "_misc/normalize";
+@import "_misc/mixins";
+@import "_misc/fonts";
+@import "_misc/adjustment";
+@import "_misc/sprite";
+@import "_misc/slick-theme";
+@import "_misc/resets";
 
 //----------------------<<sections>>----------------------\\
-@import "sections/header.scss";
-@import "sections/slider.scss";
-@import "sections/top-apps.scss";
-@import "sections/product.scss";
-@import "sections/acco.scss";
-@import "sections/footer.scss";
+
+//homepage
+@import "sections/header";
+@import "sections/homepage/slider";
+@import "sections/homepage/top-apps";
+@import "sections/homepage/product";
+@import "sections/homepage/acco";
+@import "sections/footer";
+
+//productspage
+@import "sections/productspage/pagetitle";
+@import "sections/productspage/productsmain";
+@import "sections/productspage/recentapps";
 
 .main-content{
   @include alegreya();
