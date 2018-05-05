@@ -4,13 +4,13 @@
 
 .product__title{
   width: rem(420px);
-  margin: 0 auto;
+  margin: 0 auto rem(10px);
 }
 
 .product__main{
   display: flex;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .button_mini{
@@ -59,6 +59,7 @@
 }
 
 .product__item{
+  max-width: rem(490px);
   margin-bottom: rem(10px);
   color: $maintext;
   &:last-child{

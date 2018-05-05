@@ -5,23 +5,8 @@ include includes/head
 <div class="wrapper">
     <main class="main-content">
         include includes/header
-        <div class="section">
-            <div class="container">
-                <div class="pagetitle-wrap">
-                    <div class="page-title">
-                        <div class="title-main">Dublin's iPhone applications</div>
-                        <div class="title-submain">Lorem ipsum dolor sit amet.</div>
-                    </div>
-                    <div class="search">
-                        <form action="#" method="get" class="search-form">
-                            <input type="text" placeholder="Search..." class="search__input">
-                            <input type="submit" class="search__submit" value="">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section">
+        include includes/pagetitle
+        <section class="section">
             <div class="container">
                 <div class="products-wrapper">
                     <div class="products-slider">
@@ -76,8 +61,8 @@ include includes/head
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="section">
+        </section>
+        <section class="section">
             <div class="container">
                 <div class="recentapps">
                     <ul class="tab-bar">
@@ -316,7 +301,7 @@ include includes/head
                     </ul>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 </div>
 include includes/footer

@@ -1,0 +1,105 @@
+.product-section{
+  .products-wrapper{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.demo-mainblock{
+  position: relative;
+  padding: rem(50px);
+  margin: 0 rem(80px);
+  border: 1px solid rgba($maintext, .3);
+  background: #edeeef;
+  .product__pic{
+    width: rem(160px);
+    height: rem(205px);
+  }
+  .active{
+    display: block;
+  }
+}
+
+.demo-mainblock__main{
+  display: none;
+}
+
+.tab-numbers{
+  position: absolute;
+  bottom: 97.8%;
+  left: 50%;
+  margin-left: rem(-197.5px);
+  display: flex;
+  justify-content: center;
+  .active{
+    border-color: #8eb1e3;
+    background: rgba(42,102,186,1);
+    background: linear-gradient(to bottom, rgba(42,102,186,1) 0%, rgba(17,60,130,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a66ba', endColorstr='#113c82', GradientType=0 );
+  }
+}
+
+.tab-number{
+  position: relative;
+  text-align: center;
+  width: rem(35px);
+  height: rem(35px);
+  margin-right: rem(85px);
+  font-size: rem(20px);
+  border: 1px solid #c7c8cb;
+  border-radius: 50%;
+  color: #ffffff;
+  background: rgba(160,161,167,1);
+  background: linear-gradient(to bottom, rgba(160,161,167,1) 0%, rgba(93,94,106,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0a1a7', endColorstr='#5d5e6a', GradientType=0 );
+  transition: all .5s;
+  &:after{
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: rem(-4px);
+    content: '';
+    height: rem(8px);
+    width: rem(87px);
+    border: 1px solid #c7c8cb;
+    background: rgba(199,199,199,1);
+    background: linear-gradient(to bottom, rgba(199,199,199,1) 0%, rgba(232,232,239,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7c7c7', endColorstr='#e8e8ef', GradientType=0 );
+  }
+  &:last-child{
+    margin-right: 0;
+    &:after{
+      display: none;
+    }
+  }
+  a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+  }
+}
+
+.demo-mainblock__title{
+  text-align: center;
+  margin-bottom: rem(40px);
+}
+
+.demo-mainblock__desc{
+  margin-bottom: rem(40px);
+}
+
+.passages{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 rem(170px) rem(20px);
+  img{
+    display: block;
+  }
+}
+
+.btn-dwnld{
+  background: rgba(96,78,159,1);
+  background: linear-gradient(to bottom, rgba(96,78,159,1) 0%, rgba(70,54,117,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#604e9f', endColorstr='#463675', GradientType=0 );
+}

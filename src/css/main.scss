@@ -25,9 +25,12 @@ $accentcolor: #5f7390;
 @import "sections/footer";
 
 //productspage
-@import "sections/productspage/pagetitle";
+@import "sections/pagetitle";
 @import "sections/productspage/productsmain";
 @import "sections/productspage/recentapps";
+
+//products demo
+@import "sections/products demo/products demo";
 
 .main-content{
   @include alegreya();

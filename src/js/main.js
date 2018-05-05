@@ -91,4 +91,38 @@ $(document).ready(function () {
         });
     }());
 
+    //----------------------<<product demo tab-bar>>----------------------\\
+    (function () {
+        var flag=true;
+        $('.tab-number').on('click', function (e) {
+            e.preventDefault();
+
+            var
+                $this = $(this),
+                item = $this.closest('.tab-number'),
+                container = $this.closest('.demo-mainblock'),
+                content = container.find('.demo-mainblock__main'),
+                ndx = item.index(),
+                activeItem = content.filter('.active'),
+                reqItem = content.eq(ndx),
+                duration = 500;
+
+            if(flag){
+                flag=false;
+                item.addClass('active')
+                    .siblings()
+                    .removeClass('active');
+
+                activeItem.fadeOut(duration, function() {
+                    reqItem.fadeIn(duration, function() {
+                        reqItem.addClass('active')
+                            .siblings()
+                            .removeClass('active');
+                        flag = true;
+                    });
+                });
+            }
+        });
+    }());
+
 });
