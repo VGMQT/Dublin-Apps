@@ -35,35 +35,6 @@
   font-size: rem(20px);
 }
 
-.button{
-  display: block;
-  position: absolute;
-  bottom: rem(-80px);
-  right: 0;
-  width: rem(180px);
-  padding: rem(5px) 0;
-  text-align: center;
-  font-size: rem(25px);
-  border-radius: 5px;
-  color: inherit;
-  background: rgba(45,106,193,1);
-  background: linear-gradient(to bottom, rgba(45,106,193,1) 0%, rgba(23,64,131,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d6ac1', endColorstr='#174083', GradientType=0 );
-  transition: all .5s;
-  &:after{
-    position: absolute;
-    bottom: -50px;
-    right: 0;
-    width: 183px;
-    height: 24px;
-    background: url('../assets/img/buttons/btn-shadow.png');
-    content: '';
-  }
-  &:hover{
-    transform: scale(.95);
-  }
-}
-
 .slide__pic{
   width: rem(470px);
   height: rem(380px);

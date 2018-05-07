@@ -4,10 +4,9 @@
   border-bottom: 2px solid rgba($maintext, .4);
   .active{
     .tab-bar__link{
+      @extend %product-btn-bg;
       width: rem(120px);
       transform: scale(1.15);
-      background: rgba(72,72,92,1);
-      background: linear-gradient(to right, rgba(72,72,92,1) 0%, rgba(54,54,71,1) 100%);
       &:hover{
         color: $nav-color;
       }
@@ -24,13 +23,12 @@
   font-size: rem(15px);
   border-radius: 5px 5px 0 0;
   color: $nav-color;
-  background: rgba(72,72,92,1);
-  background: linear-gradient(to right, rgba(72,72,92,.4) 0%, rgba(54,54,71,.4) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48485c', endColorstr='#363647', GradientType=1 );
+  background: rgba(101,101,125,1);
+  background: linear-gradient(to bottom, rgba(101,101,125,.5) 0%, rgba(67,67,86,.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#65657d', endColorstr='#434356', GradientType=0 );
   transition: all .5s;
   &:hover{
     transform: scale(1.02);
-    color: $maintext-dark;
   }
 }
 
@@ -70,12 +68,10 @@
 .tab-content__text{
   line-height: 1;
   .button_mini{
+    @extend %product-btn-bg;
     margin: 0;
     width: rem(95px);
     font-size: rem(15px);
-    background: rgba(72,72,92,1);
-    background: linear-gradient(to right, rgba(72,72,92,1) 0%, rgba(54,54,71,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48485c', endColorstr='#363647', GradientType=1 );
   }
 }
 

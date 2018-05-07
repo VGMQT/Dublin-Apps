@@ -13,25 +13,6 @@
   align-items: flex-start;
 }
 
-.button_mini{
-  display: block;
-  position: static;
-  bottom: 0;
-  right: 0;
-  width: rem(130px);
-  margin-left: rem(25px);
-  font-size: rem(20px);
-  color: $nav-color;
-  &:after{
-    position: static;
-    bottom: 0;
-    right: 0;
-    width: 0;
-    height: 0;
-    background: none;
-  }
-}
-
 .product__pic{
   position: relative;
   width: rem(380px);

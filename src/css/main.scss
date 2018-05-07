@@ -4,6 +4,7 @@ $bg-color: #1b1b2e;
 $maintext: #8c8c92;
 $maintext-dark: #505050;
 $accentcolor: #5f7390;
+$border-color: rgba($maintext, .3);
 
 //----------------------<<misc>>----------------------\\
 @import "_misc/normalize";
@@ -13,6 +14,9 @@ $accentcolor: #5f7390;
 @import "_misc/sprite";
 @import "_misc/slick-theme";
 @import "_misc/resets";
+
+//parts
+@import "_parts/button";
 
 //----------------------<<sections>>----------------------\\
 
@@ -31,6 +35,10 @@ $accentcolor: #5f7390;
 
 //products demo
 @import "sections/products demo/products demo";
+
+//blog
+@import "sections/blog/blog";
+@import "sections/blog/sidebar";
 
 .main-content{
   @include alegreya();
