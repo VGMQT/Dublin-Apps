@@ -1,0 +1,140 @@
+//----------------------<<main content>>----------------------\\
+.main-content{
+  @include alegreya();
+  padding: rem(35px) 0;
+  background: rgba(27,27,45,1);
+  background: linear-gradient(to bottom, rgba(27,27,45,1) 0%, rgba(27,27,45,1) 6%, rgba(231,232,234,1) 39%, rgba(231,232,234,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1b2d', endColorstr='#e7e8ea', GradientType=0 );
+}
+
+//----------------------<<title, desc>>----------------------\\
+.main-wrapper{
+  margin-bottom: rem(15px);
+  .title-main{
+    transition: color .5s;
+    &:hover{
+      color: $accentcolor;
+    }
+  }
+}
+
+.submain-wrapper{
+  display: flex;
+  .title-submain{
+    &:first-child{
+      margin-right: rem(20px);
+    }
+  }
+}
+
+.title-main {
+  display: block;
+  font-size: rem(25px);
+  color: $maintext-dark;
+}
+
+.title-submain {
+  display: block;
+  font-size: rem(15px);
+  color: $accentcolor;
+}
+
+.desc {
+  display: block;
+  font-size: rem(15px);
+  color: $maintext-dark;
+  p{
+    margin-bottom: rem(20px);
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
+//----------------------<<button>>----------------------\\
+.btn{
+  @extend %button-bg;
+  display: block;
+  width: rem(130px);
+  padding: rem(5px) 0;
+  margin-left: rem(25px);
+  font-size: rem(20px);
+  color: $nav-color;
+  text-align: center;
+  border-radius: 5px;
+  transition: all .5s;
+  &:hover{
+    transform: scale(.95);
+  }
+}
+
+.btn-slider{
+  display: block;
+  position: absolute;
+  bottom: rem(-80px);
+  right: 0;
+  width: rem(180px);
+  font-size: rem(25px);
+  &:after{
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    width: 183px;
+    height: 24px;
+    background: url('../assets/img/buttons/btn-shadow.png');
+    content: '';
+  }
+}
+
+//----------------------<<list>>----------------------\\
+.list{
+  margin-bottom: rem(25px);
+}
+
+.list__item{
+  max-width: rem(490px);
+  margin-bottom: rem(10px);
+  color: $maintext;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  &:before{
+    content: '';
+    padding-right: rem(14px);
+    margin-right: rem(12px);
+    border-radius: 50%;
+    background: url(../assets/img/misc/spritesheet.png) no-repeat;
+    background-position: -10px -107px;
+  }
+}
+
+//----------------------<<blog socials>>----------------------\\
+.blog__socials{
+  display: flex;
+}
+
+.blog__socials-item{
+  margin-right: rem(10px);
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.blog__socials-link{
+  display: block;
+  width: rem(30px);
+  height: rem(30px);
+  &:hover{
+    .blog__socials-svg{
+      transform: scale(1.2);
+    }
+  }
+}
+
+.blog__socials-svg{
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  fill: #6d6d84;
+  transition: all .5s;
+}

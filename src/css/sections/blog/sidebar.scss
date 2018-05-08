@@ -1,5 +1,8 @@
 .sidebar{
   width: 25%;
+  background: rgba(223,224,226,1);
+  background: linear-gradient(to right, rgba(223,224,226,1) 0%, rgba(223,224,226,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfe0e2', endColorstr='#dfe0e2', GradientType=1 );
 }
 
 .sidebar-inner{
@@ -15,31 +18,33 @@
   .title-main{
     margin-bottom: rem(20px);
   }
-  .product__list{
+  .list{
     margin: 0;
   }
 }
 
-.product__item{
-  &:hover{
-    a{
-      color: $accentcolor;
+.sidebar-list{
+  .list__item{
+    &:hover{
+      a{
+        color: $accentcolor;
+      }
     }
-  }
-  &:before{
-    display: none;
-  }
-  a{
-    display: block;
-    color: $maintext;
-    transition: all .3s;
     &:before{
-      content: '';
-      padding-right: rem(14px);
-      margin-right: rem(12px);
-      border-radius: 50%;
-      background: url(../assets/img/misc/spritesheet.png) no-repeat;
-      background-position: -10px -107px;
+      display: none;
+    }
+    a{
+      display: block;
+      color: $maintext;
+      transition: all .3s;
+      &:before{
+        content: '';
+        padding-right: rem(14px);
+        margin-right: rem(12px);
+        border-radius: 50%;
+        background: url(../assets/img/misc/spritesheet.png) no-repeat;
+        background-position: -10px -107px;
+      }
     }
   }
 }

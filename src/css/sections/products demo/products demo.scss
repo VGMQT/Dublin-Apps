@@ -98,8 +98,6 @@
   }
 }
 
-.btn-dwnld{
-  background: rgba(96,78,159,1);
-  background: linear-gradient(to bottom, rgba(96,78,159,1) 0%, rgba(70,54,117,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#604e9f', endColorstr='#463675', GradientType=0 );
+.btn_download{
+  @extend %product-btn-bg;
 }

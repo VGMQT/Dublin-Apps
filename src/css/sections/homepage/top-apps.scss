@@ -89,22 +89,17 @@
   line-height: 1;
 }
 
-.title-main {
-  font-size: rem(25px);
-  color: $maintext-dark;
-}
-
-.title-submain {
-  font-size: rem(15px);
-  color: $accentcolor;
-}
-
-.desc {
-  font-size: rem(15px);
-  color: $maintext-dark;
-}
 
 //----------------------<<news slider>>----------------------\\
+.news-slider-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.news-slider{
+  width: 600px;
+}
+
 .news-slide {
   width: rem(600px);
   margin: 0 auto;

@@ -35,27 +35,6 @@
   flex-direction: column;
 }
 
-.product__list{
-  margin-bottom: rem(25px);
-}
-
-.product__item{
-  max-width: rem(490px);
-  margin-bottom: rem(10px);
-  color: $maintext;
-  &:last-child{
-    margin-bottom: 0;
-  }
-  &:before{
-    content: '';
-    padding-right: rem(14px);
-    margin-right: rem(12px);
-    border-radius: 50%;
-    background: url(../assets/img/misc/spritesheet.png) no-repeat;
-    background-position: -10px -107px;
-  }
-}
-
 .product__buttons{
   display: flex;
   justify-content: flex-start;

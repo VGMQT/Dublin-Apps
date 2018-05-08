@@ -3,7 +3,7 @@ $nav-color: #d7d7e3;
 $bg-color: #1b1b2e;
 $maintext: #8c8c92;
 $maintext-dark: #505050;
-$accentcolor: #5f7390;
+$accentcolor: rgb(23,64,131);
 $border-color: rgba($maintext, .3);
 
 //----------------------<<misc>>----------------------\\
@@ -15,8 +15,8 @@ $border-color: rgba($maintext, .3);
 @import "_misc/slick-theme";
 @import "_misc/resets";
 
-//parts
-@import "_parts/button";
+//elements
+@import "elements/elements";
 
 //----------------------<<sections>>----------------------\\
 
@@ -40,10 +40,5 @@ $border-color: rgba($maintext, .3);
 @import "sections/blog/blog";
 @import "sections/blog/sidebar";
 
-.main-content{
-  @include alegreya();
-  padding: rem(35px) 0;
-  background: rgba(27,27,45,1);
-  background: linear-gradient(to bottom, rgba(27,27,45,1) 0%, rgba(27,27,45,1) 6%, rgba(231,232,234,1) 39%, rgba(231,232,234,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1b2d', endColorstr='#e7e8ea', GradientType=0 );
-}
+//blog content
+@import "sections/blog content/blog-content";
