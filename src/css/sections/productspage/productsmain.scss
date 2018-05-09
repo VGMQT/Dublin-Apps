@@ -1,8 +1,3 @@
-.products-wrapper{
-  @extend %container-bg;
-  padding: rem(30px) rem(75px) rem(70px);
-}
-
 .products-slide__inner{
   display: flex;
   flex-direction: column;

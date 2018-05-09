@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+include includes/head
+<body>
+<div class="wrapper">
+    <main class="main-content">
+        include includes/header
+        include includes/pagetitle
+        <section class="section">
+            <div class="container">
+                <div class="content-wrapper">
+                    <div class="contacts">
+                        <div class="contacts__form">
+                            <form class="formcts" action="#" method="get">
+                                <div class="contacts__inputs">
+                                    <input class="contacts__input" placeholder="Your name" type="text"/>
+                                    <input class="contacts__input" placeholder="E-mail address" type="email"/>
+                                    <input class="contacts__input" placeholder="Phone number" type="tel"/>
+                                    <textarea class="contacts__input contacts__text-area" placeholder="Your message"></textarea>
+                                </div>
+                                <input type="submit" value="Submit" class="btn contacts__btn"/>
+                            </form>
+                        </div>
+                        <div class="contacts__geo">
+                            <div class="contacts__geo-text">
+                                <div class="title-main">Dublin's iPad Apps office</div>
+                                <ul class="contacts__address">
+                                    <li class="address__item">Lorem ipsum.</li>
+                                    <li class="address__item">Lorem ipsum.</li>
+                                    <li class="address__item">Printing</li>
+                                    <li class="address__item">
+                                        <p>Email: email</p>
+                                        <p>Email: email2</p>
+                                    </li>
+                                    <li class="address__item">Phone: 888-888</li>
+                                </ul>
+                            </div>
+                            <div id="map" class="contacts__map"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+include includes/footer
+<!-- build:js js/vendor.js -->
+<!-- bower:js -->
+<!-- endbower -->
+<!-- endbuild -->
+<!-- build:js js/main.min.js -->
+<script src="js/main.min.js"></script>
+<!-- endbuild -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAegz7fGIWTKx8FfAUDCnRTqM0K02uOX3w&callback=initMap" async defer></script>
+</body>
+</html>

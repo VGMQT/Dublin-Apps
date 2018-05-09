@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=1020">
 <link rel="stylesheet" href="css/vendor.css">
 <link rel="stylesheet" href="css/main.min.css">
-<title>Products
+<title>Contact us
 </title></head><body>
 <div class="wrapper">
 <main class="main-content"><header class="header">
@@ -21,16 +21,16 @@
 </div>
 <nav class="nav">
 <ul class="nav__list"><li class="nav__item"><a href="index.html">Home</a></li>
-<li class="nav__item active"><a href="products.html">iPad apps</a></li>
+<li class="nav__item"><a href="products.html">iPad apps</a></li>
 <li class="nav__item"><a href="blog.html">Blog</a></li>
-<li class="nav__item"><a href="contacts.html">Contact us</a></li></ul>
+<li class="nav__item active"><a href="contacts.html">Contact us</a></li></ul>
 </nav>
 </div>
 </header><div class="section">
 <div class="container">
 <div class="pagetitle-wrap">
 <div class="page-title">
-<div class="title-main">Dublin's iPad applications</div>
+<div class="title-main">Keep in touch with us</div>
 <div class="title-submain">Lorem ipsum dolor sit amet.</div>
 </div>
 <div class="search">
@@ -44,40 +44,34 @@
 </div><section class="section">
 <div class="container">
 <div class="content-wrapper">
-<div class="products-content__title">
-<div class="main-wrapper">
-<div class="title-main">iPad Application</div>
-<div class="title-submain">Lorem ipsum dolor sit amet.</div>
+<div class="contacts">
+<div class="contacts__form">
+<form class="formcts" action="#" method="get">
+<div class="contacts__inputs">
+<input class="contacts__input" placeholder="Your name" type="text"/>
+<input class="contacts__input" placeholder="E-mail address" type="email"/>
+<input class="contacts__input" placeholder="Phone number" type="tel"/>
+<textarea class="contacts__input contacts__text-area" placeholder="Your message"></textarea>
 </div>
+<input type="submit" value="Submit" class="btn contacts__btn"/>
+</form>
 </div>
-<div class="products-content__pic">
-<img src="assets/img/ipad/product-content.png" alt="iPad">
-</div>
-<div class="products-content__btn">
-<a href="#" class="btn">Buy now</a>
-</div>
-<div class="products-content__desc">
-<div class="title-main">iPad application description</div>
-<div class="desc">
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis culpa quisquam rem  voluptatem. Accusamus animi at cupiditate earum ex facere id impedit ipsam, maxime minus
-  officia porro tenetur ullam voluptatem voluptatum. Ex illo inventore necessitatibus officia
-  placeat possimus provident rerum sit sunt vel? Amet, eius enim eos explicabo iusto
-  ratione! Blanditiis culpa quisquam rem
-  voluptatem. Accusamus animi at cupiditate earum ex facere id impedit ipsam, maxime minus
-  officia porro tenetur ullam voluptatem voluptatum. Ex illo inventore necessitatibus officia
-  placeat possimus provident rerum sit sunt vel? Amet, eius enim eos explicabo iusto
-  ratione!</p></div>
-</div>
-<div class="products-content__list">
-<div class="title-main">List of advantages</div>
-<ul class="list">
-<li class="list__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, corporis?</li>
-<li class="list__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-<li class="list__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quo.</li>
-<li class="list__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, libero.</li>
-<li class="list__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-<li class="list__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, voluptas!</li>
+<div class="contacts__geo">
+<div class="contacts__geo-text">
+<div class="title-main">Dublin's iPad Apps office</div>
+<ul class="contacts__address">
+<li class="address__item">Lorem ipsum.</li>
+<li class="address__item">Lorem ipsum.</li>
+<li class="address__item">Printing</li>
+<li class="address__item">
+<p>Email: email</p>
+<p>Email: email2</p>
+</li>
+<li class="address__item">Phone: 888-888</li>
 </ul>
+</div>
+<div id="map" class="contacts__map"></div>
+</div>
 </div>
 </div>
 </div>
@@ -150,5 +144,6 @@ voluptates. Alias architecto consequuntur enim molestias nobis quas rerum?</div>
 </div>
 <script src="js/vendor.js"></script>
 <script src="js/main.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAegz7fGIWTKx8FfAUDCnRTqM0K02uOX3w&callback=initMap" async defer></script>
 </body>
 </html>

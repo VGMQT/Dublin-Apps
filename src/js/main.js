@@ -1,3 +1,22 @@
+//----------------------<<google map>>----------------------\\
+function initMap() {
+    var myLatLng = {lat: 53.350283, lng: -6.266257};
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+        center: myLatLng,
+        zoom: 16,
+        disableDefaultUI: true,
+        zoomControl: true
+    });
+
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: "Dublin's iPad Apps"
+    });
+}
+
+//----------------------<<custom code>>----------------------\\
 $(document).ready(function () {
 
     //----------------------<<svg for ie>>----------------------\\
