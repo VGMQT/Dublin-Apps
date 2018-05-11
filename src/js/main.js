@@ -144,4 +144,68 @@ $(document).ready(function () {
         });
     }());
 
+    //----------------------<<modal>>----------------------\\
+    (function () {
+        $('#modal').iziModal({
+            width: '42.5rem',
+            radius: 5,
+            overlayColor: 'rgba(0, 0, 0, 0.8)',
+            transitionIn: 'fadeInDown',
+            focusInput: false
+        });
+
+        $('#modal-continue').iziModal({
+            width: '26.25rem',
+            radius: 5,
+            overlayColor: 'rgba(0, 0, 0, 0.8)',
+            focusInput: false
+        });
+
+        $(document).on('click', '.trigger', function (event) {
+            event.preventDefault();
+            $('#modal').iziModal('open');
+        });
+
+        $(document).on('click', '.trigger-continue', function (event) {
+            event.preventDefault();
+            $('#modal-continue').iziModal('open');
+        });
+    }());
+
+    //----------------------<<counter>>----------------------\\
+    (function () {
+
+        $('.count-arrows__down').click(function () {
+
+            var
+                $this = $(this),
+                container = $this.closest('.app-preview__item'),
+                qty = container.find('.digits'),
+                count = parseInt(qty.val()) - 1;
+
+            count = count < 1 ? 1 : count;
+            qty.val(count);
+            qty.change();
+            return false;
+        });
+
+        $('.count-arrows__up').click(function () {
+
+            var
+                $this = $(this),
+                container = $this.closest('.app-preview__item'),
+                qty = container.find('.digits');
+
+            qty.val(parseInt(qty.val()) + 1);
+            qty.change();
+            return false;
+        });
+    }());
+
+    //----------------------<<jquery-mask>>----------------------\\
+    (function () {
+        $('.digits').mask('000');
+        $('#credit').mask('0000-0000-0000-0000');
+    }());
+
 });
