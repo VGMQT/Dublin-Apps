@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=1020">
 <link rel="stylesheet" href="css/vendor.css">
 <link rel="stylesheet" href="css/main.min.css">
-<title>Homepage
+<title>Homepage | Dublin Apps
 </title></head><body>
 <div class="wrapper">
 <main class="main-content"><header class="header">
 <div class="container">
 <div class="logo">
 <div class="logo__pic">
-<i class="sprite sprite-logo"></i>
+<img src="assets/img/logo/logo.png" alt="Logotype">
 </div>
 <div class="logo__text">
 <div class="logo__title">Dublin Apps</div>
@@ -21,7 +21,7 @@
 </div>
 <nav class="nav">
 <ul class="nav__list"><li class="nav__item active"><a href="index.html">Home</a></li>
-<li class="nav__item"><a href="products.html">iPad apps</a></li>
+<li class="nav__item"><a href="products.html">Apps</a></li>
 <li class="nav__item"><a href="blog.html">Blog</a></li>
 <li class="nav__item"><a href="contacts.html">Contact us</a></li></ul>
 </nav>
@@ -242,26 +242,28 @@ soluta.</div>
 </div>
 <footer class="footer">
 <div class="container">
-<div class="quote">
-<div class="tweet-svg-wrap">
-<svg class="tweet-svg">
+<a href="#" class="quote">
+<div class="quote__svg-wrapper">
+<svg class="quote__svg">
 <use xlink:href="assets/img/svg/sprite/socials-sprite.svg#tw"></use>
 </svg>
 </div>
-<div class="tweet-quote">
-<div class="quote__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab distinctio dolor
+<div class="quote__tweet">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab distinctio dolor
 est nam obcaecati qui sed
-voluptates. Alias architecto consequuntur enim molestias nobis quas rerum?</div>
-<div class="quote__author">Lorem ipsum dolor.</div>
+voluptates. Alias architecto consequuntur enim molestias nobis quas rerum?</p>
+<i>Lorem ipsum dolor.</i>
 </div>
-</div>
-<div class="main-footer">
+</a>
+<main class="footer__main">
 <div class="newsletter">
+<div class="newsletter__text">
 <div class="title-main">Newsletter</div>
-<div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, sit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, vitae.</div>
-<form action="#" method="get" class="emailin">
-<input class="input" placeholder="Enter your e-mail address" type="email"/>
-<input type="submit" value="Subscribe" class="input-btn"/>
+<div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, sit!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, vitae.</div>
+</div>
+<form action="#" method="get" class="form-email">
+<input type="email" placeholder="Enter your e-mail address" class="footer__input"/>
+<input type="submit" value="Subscribe" class="footer__input-btn"/>
 </form>
 <ul class="socials">
 <li class="socials__item">
@@ -287,21 +289,27 @@ voluptates. Alias architecto consequuntur enim molestias nobis quas rerum?</div>
 </li>
 </ul>
 </div>
-<div class="form">
-<div class="form-title">Contact form</div>
-<form class="formin" action="#" method="get">
-<div class="form-wrap">
-<div class="inputs">
-<input class="input" type="text"/>
-<input class="input" type="text"/>
-<input class="input" type="text"/>
+<div class="footer__form">
+<div class="footer__form-title">Contact form</div>
+<form class="form-footer" action="#" method="get">
+<div class="form-footer__inputs">
+<ul class="form-footer__inputs-list">
+<li class="form-footer__inputs-item">
+<input class="footer__input" type="text"/>
+</li>
+<li class="form-footer__inputs-item">
+<input class="footer__input" type="text"/>
+</li>
+<li class="form-footer__inputs-item">
+<input class="footer__input" type="text"/>
+</li>
+</ul>
+<textarea class="footer__input footer__text-area"></textarea>
 </div>
-<textarea class="input text-area"></textarea>
-</div>
-<input type="submit" value="Subscribe" class="input-btn"/>
+<input type="submit" value="Subscribe" class="footer__input-btn"/>
 </form>
 </div>
-</div>
+</main>
 <div class="copyright">Design by cssauthor.com © 2012-2018</div>
 </div>
 <script src="js/vendor.js"></script>

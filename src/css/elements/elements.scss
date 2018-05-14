@@ -3,7 +3,12 @@
   @include alegreya();
   padding: rem(35px) 0;
   background: rgba(27,27,45,1);
-  background: linear-gradient(to bottom, rgba(27,27,45,1) 0%, rgba(27,27,45,1) 6%, rgba(231,232,234,1) 39%, rgba(231,232,234,1) 100%);
+  background: -moz-linear-gradient(top, rgba(27,27,45,1) 0%, rgba(27,27,45,0.86) 18%, rgba(231,232,234,0.67) 43%, rgba(231,232,234,0.48) 68%, rgba(231,232,234,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(27,27,45,1)), color-stop(18%, rgba(27,27,45,0.86)), color-stop(43%, rgba(231,232,234,0.67)), color-stop(68%, rgba(231,232,234,0.48)), color-stop(100%, rgba(231,232,234,1)));
+  background: -webkit-linear-gradient(top, rgba(27,27,45,1) 0%, rgba(27,27,45,0.86) 18%, rgba(231,232,234,0.67) 43%, rgba(231,232,234,0.48) 68%, rgba(231,232,234,1) 100%);
+  background: -o-linear-gradient(top, rgba(27,27,45,1) 0%, rgba(27,27,45,0.86) 18%, rgba(231,232,234,0.67) 43%, rgba(231,232,234,0.48) 68%, rgba(231,232,234,1) 100%);
+  background: -ms-linear-gradient(top, rgba(27,27,45,1) 0%, rgba(27,27,45,0.86) 18%, rgba(231,232,234,0.67) 43%, rgba(231,232,234,0.48) 68%, rgba(231,232,234,1) 100%);
+  background: linear-gradient(to bottom, rgba(27,27,45,1) 0%, rgba(27,27,45,0.86) 18%, rgba(231,232,234,0.67) 43%, rgba(231,232,234,0.48) 68%, rgba(231,232,234,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1b2d', endColorstr='#e7e8ea', GradientType=0 );
 }
 
