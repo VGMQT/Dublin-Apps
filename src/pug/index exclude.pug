@@ -7,18 +7,18 @@ include includes/head
         include includes/header
         <section class="section">
             <div class="container">
-                <div class="slider">
-                    <div class="slide">
-                        <div class="slide__inner">
-                            <div class="slide__content">
-                                <div class="slide__text">
-                                    <div class="slide__text-title">
+                <div class="slider-homepage">
+                    <div class="slide-homepage">
+                        <div class="slide-homepage__inner">
+                            <div class="slide-homepage__content">
+                                <div class="slide-homepage__text">
+                                    <div class="slide-homepage__text-title">
                                         | DUBLIN'S
                                     </div>
-                                    <div class="slide__text-subtitle">
+                                    <div class="slide-homepage__text-subtitle">
                                         | iPad <b>Apps</b>
                                     </div>
-                                    <div class="slide__text-desc">
+                                    <div class="slide-homepage__text-desc">
                                         <p>Free and paid apps</p>
                                         <p>for your iPad</p>
                                     </div>
@@ -27,22 +27,22 @@ include includes/head
                                     | Read More
                                 </a>
                             </div>
-                            <div class="slide__pic">
+                            <div class="slide-homepage__pic">
                                 <img src="assets/img/ipad/ipad-slider.png" alt="iPad">
                             </div>
                         </div>
                     </div>
-                    <div class="slide">
-                        <div class="slide__inner">
-                            <div class="slide__content">
-                                <div class="slide__text">
-                                    <div class="slide__text-title">
+                    <div class="slide-homepage">
+                        <div class="slide-homepage__inner">
+                            <div class="slide-homepage__content">
+                                <div class="slide-homepage__text">
+                                    <div class="slide-homepage__text-title">
                                         | DUBLIN'S
                                     </div>
-                                    <div class="slide__text-subtitle">
+                                    <div class="slide-homepage__text-subtitle">
                                         | iPad <b>Apps</b>
                                     </div>
-                                    <div class="slide__text-desc">
+                                    <div class="slide-homepage__text-desc">
                                         <p>Free and paid apps</p>
                                         <p>for your iPad</p>
                                     </div>
@@ -51,7 +51,7 @@ include includes/head
                                     | Read More
                                 </a>
                             </div>
-                            <div class="slide__pic">
+                            <div class="slide-homepage__pic">
                                 <img src="assets/img/ipad/ipad-slider.png" alt="iPad">
                             </div>
                         </div>
@@ -59,45 +59,53 @@ include includes/head
                 </div>
             </div>
         </section>
-        <section class="section apps-section">
+        <section class="section">
             <div class="container">
-                <div class="top-apps">
-                    <a href="#" class="app">
-                        <div class="app__pic">
-                            <img class="app__pic-img" src="assets/img/apps/e-book.png" alt="e-Book">
-                        </div>
-                        <div class="app__title">
-                            | e-Book Reader Pro
-                        </div>
-                    </a>
-                    <a href="#" class="app">
-                        <div class="app__pic">
-                            <img class="app__pic-img" src="assets/img/apps/image-viewer.png" alt="Image Viewer">
-                        </div>
-                        <div class="app__title">
-                            | Image Viewer Pro
-                        </div>
-                    </a>
-                    <a href="#" class="app">
-                        <div class="app__pic">
-                            <img class="app__pic-img" src="assets/img/apps/media.png" alt="Media manager">
-                        </div>
-                        <div class="app__title">
-                            | Media manager
-                        </div>
-                    </a>
-                    <a href="#" class="app">
-                        <div class="app__pic">
-                            <img class="app__pic-img" src="assets/img/apps/dice.png" alt="Leo Entertainment">
-                            <img class="app__pic-new" src="assets/img/apps/new.png" alt="New">
-                        </div>
-                        <div class="app__title">
-                            | Leo Entertainment
-                        </div>
-                    </a>
-                </div>
-                <div class="categories">
-                    <div class="categories__block">
+                <ul class="top-apps">
+                    <li class="top-apps__item">
+                        <a href="#" class="top-apps__link">
+                            <div class="top-apps__pic">
+                                <img class="top-apps__img" src="assets/img/apps/e-book.png" alt="e-Book">
+                            </div>
+                            <div class="top-apps__title">
+                                | e-Book Reader Pro
+                            </div>
+                        </a>
+                    </li>
+                    <li class="top-apps__item">
+                        <a href="#" class="top-apps__link">
+                            <div class="top-apps__pic">
+                                <img class="top-apps__img" src="assets/img/apps/image-viewer.png" alt="Image Viewer">
+                            </div>
+                            <div class="top-apps__title">
+                                | Image Viewer Pro
+                            </div>
+                        </a>
+                    </li>
+                    <li class="top-apps__item">
+                        <a href="#" class="top-apps__link">
+                            <div class="top-apps__pic">
+                                <img class="top-apps__img" src="assets/img/apps/media.png" alt="Media manager">
+                            </div>
+                            <div class="top-apps__title">
+                                | Media manager
+                            </div>
+                        </a>
+                    </li>
+                    <li class="top-apps__item">
+                        <a href="#" class="top-apps__link">
+                            <div class="top-apps__pic">
+                                <img class="top-apps__img" src="assets/img/apps/dice.png" alt="Leo Entertainment">
+                                <img class="top-apps__img-new" src="assets/img/apps/new.png" alt="New">
+                            </div>
+                            <div class="top-apps__title">
+                                | Leo Entertainment
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="categories">
+                    <li class="categories__item">
                         <a href="#" class="categories__title">
                             <span class="categories__icon">
                                 <i class="sprite sprite-discover"></i>
@@ -115,8 +123,8 @@ include includes/head
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
                                 |   aliquam consectetur est laboriosam magnam magni placeat quae quam saepe similique?</p>
                         </div>
-                    </div>
-                    <div class="categories__block">
+                    </li>
+                    <li class="categories__item">
                         <a href="#" class="categories__title">
                             <span class="categories__icon">
                                 <i class="sprite sprite-browse"></i>
@@ -134,8 +142,8 @@ include includes/head
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
                                 |   aliquam consectetur est laboriosam magnam magni placeat quae quam saepe similique?</p>
                         </div>
-                    </div>
-                    <div class="categories__block">
+                    </li>
+                    <li class="categories__item">
                         <a href="#" class="categories__title">
                             <span class="categories__icon">
                                 <i class="sprite sprite-develop"></i>
@@ -153,19 +161,19 @@ include includes/head
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
                                 |   aliquam consectetur est laboriosam magnam magni placeat quae quam saepe similique?</p>
                         </div>
-                    </div>
-                </div>
-                <div class="news-slider-wrapper">
-                    <div class="news-slider">
-                        <div class="news-slide">
-                            <div class="news-slide__inner">
+                    </li>
+                </ul>
+                <div class="slider-news-wrapper">
+                    <div class="slider-news">
+                        <div class="slide-news">
+                            <div class="slide-news__inner">
                                 <p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipisicing elit</a>. Aspernatur
                                     |   consectetur corporis debitis
                                     |   iste itaque vitae? Nostrum officia placeat quam tempore!</p>
                             </div>
                         </div>
-                        <div class="news-slide">
-                            <div class="news-slide__inner">
+                        <div class="slide-news">
+                            <div class="slide-news__inner">
                                 <p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipisicing elit</a>. Aspernatur
                                     |   consectetur corporis debitis
                                     |   iste itaque vitae? Nostrum officia placeat quam tempore!</p>
@@ -175,18 +183,18 @@ include includes/head
                 </div>
             </div>
         </section>
-        <section class="section product-section">
+        <section class="section">
             <div class="container">
-                <div class="product">
-                    <div class="product__title">
+                <div class="product-demo">
+                    <div class="product-demo__title">
                         <div class="title-main">There are many variations of passages</div>
                         <div class="title-submain">Lorem ipsum dolor sit amet.</div>
                     </div>
-                    <div class="product__main">
-                        <div class="product__pic">
+                    <div class="product-demo__main">
+                        <div class="product-demo__pic">
                             <img src="assets/img/ipad/ipad-product.png" alt="iPad">
                         </div>
-                        <div class="product__text">
+                        <div class="product-demo__content">
                             <ul class="list">
                                 <li class="list__item">
                                     | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, pariatur!
@@ -204,7 +212,7 @@ include includes/head
                                     | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, pariatur!
                                 </li>
                             </ul>
-                            <div class="product__buttons">
+                            <div class="product-demo__buttons">
                                 <a href="#" class="btn">
                                     | Read More
                                 </a>
@@ -219,12 +227,12 @@ include includes/head
         </section>
         <section class="section">
             <div class="container">
-                <ul class="acco-list">
-                    <li class="acco-item">
-                        <a href="#" class="acco-item__link">
+                <ul class="acco">
+                    <li class="acco__item">
+                        <a href="#" class="acco__link">
                             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, provident?
                         </a>
-                        <div class="acco-item__text">
+                        <div class="acco__content">
                             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis doloremque
                             | perferendis ratione temporibus voluptates. Adipisci inventore minima pariatur repellat
                             | soluta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis doloremque
@@ -234,11 +242,11 @@ include includes/head
                             | soluta.
                         </div>
                     </li>
-                    <li class="acco-item">
-                        <a href="#" class="acco-item__link">
+                    <li class="acco__item">
+                        <a href="#" class="acco__link">
                             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, provident?
                         </a>
-                        <div class="acco-item__text">
+                        <div class="acco__content">
                             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis doloremque
                             | perferendis ratione temporibus voluptates. Adipisci inventore minima pariatur repellat
                             | soluta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis doloremque
@@ -248,11 +256,11 @@ include includes/head
                             | soluta.
                         </div>
                     </li>
-                    <li class="acco-item">
-                        <a href="#" class="acco-item__link">
+                    <li class="acco__item">
+                        <a href="#" class="acco__link">
                             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, provident?
                         </a>
-                        <div class="acco-item__text">
+                        <div class="acco__content">
                             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis doloremque
                             | perferendis ratione temporibus voluptates. Adipisci inventore minima pariatur repellat
                             | soluta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis doloremque
@@ -262,11 +270,11 @@ include includes/head
                             | soluta.
                         </div>
                     </li>
-                    <li class="acco-item">
-                        <a href="#" class="acco-item__link">
+                    <li class="acco__item">
+                        <a href="#" class="acco__link">
                             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, provident?
                         </a>
-                        <div class="acco-item__text">
+                        <div class="acco__content">
                             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis doloremque
                             | perferendis ratione temporibus voluptates. Adipisci inventore minima pariatur repellat
                             | soluta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis doloremque
@@ -276,11 +284,11 @@ include includes/head
                             | soluta.
                         </div>
                     </li>
-                    <li class="acco-item">
-                        <a href="#" class="acco-item__link">
+                    <li class="acco__item">
+                        <a href="#" class="acco__link">
                             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, provident?
                         </a>
-                        <div class="acco-item__text">
+                        <div class="acco__content">
                             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis doloremque
                             | perferendis ratione temporibus voluptates. Adipisci inventore minima pariatur repellat
                             | soluta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis doloremque

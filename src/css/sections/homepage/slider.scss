@@ -1,10 +1,10 @@
-.slide__inner{
+.slide-homepage__inner {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 
-.slide__content{
+.slide-homepage__content {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -14,32 +14,31 @@
   color: $nav-color;
 }
 
-.slide__text{
+.slide-homepage__text {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   text-align: right;
 }
 
-.slide__text-title{
+.slide-homepage__text-title {
   @include overlock(bold);
   font-size: rem(45px);
 }
 
-.slide__text-subtitle{
+.slide-homepage__text-subtitle {
   @include overlock();
   font-size: rem(40px);
 }
 
-.slide__text-desc{
+.slide-homepage__text-desc {
   font-size: rem(20px);
 }
 
-.slide__pic{
+.slide-homepage__pic {
   width: rem(470px);
   height: rem(380px);
-  img{
-    display: block;
-    max-width: 100%;
+  img {
+    @extend %img;
   }
 }

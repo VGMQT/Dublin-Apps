@@ -26,11 +26,11 @@ $(document).ready(function () {
 
     //----------------------<<slider>>----------------------\\
     (function () {
-        $('.slider').slick();
+        $('.slider-homepage').slick();
     }());
 
     (function () {
-        $('.news-slider').slick();
+        $('.slider-news').slick();
     }());
 
     (function () {
@@ -46,13 +46,13 @@ $(document).ready(function () {
     (function () {
         var flag = true;
 
-        $('.acco-item__link').on('click', function (e) {
+        $('.acco__link').on('click', function (e) {
             e.preventDefault();
             var
                 $this = $(this),
-                container = $this.closest('.acco-list'),
-                item = $this.closest('.acco-item'),
-                currentContent = item.find('.acco-item__text'),
+                container = $this.closest('.acco'),
+                item = $this.closest('.acco__item'),
+                currentContent = item.find('.acco__content'),
                 duration = 500;
 
             if(flag){
@@ -61,7 +61,7 @@ $(document).ready(function () {
                     item.addClass('active')
                         .siblings()
                         .removeClass('active')
-                        .find('.acco-item__text')
+                        .find('.acco__content')
                         .slideUp(500);
                     currentContent.slideDown(duration, function () {
                         flag = true;
