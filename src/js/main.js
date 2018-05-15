@@ -34,7 +34,7 @@ $(document).ready(function () {
     }());
 
     (function () {
-        $('.products-slider').slick({
+        $('.slider-products').slick({
             infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,
@@ -85,7 +85,7 @@ $(document).ready(function () {
             var
                 $this = $(this),
                 item = $this.closest('.tab-bar__item'),
-                container = $this.closest('.recentapps'),
+                container = $this.closest('.container'),
                 content = container.find('.tab-content__item'),
                 ndx = item.index(),
                 activeItem = content.filter('.active'),

@@ -1,4 +1,4 @@
-.products-slide__inner{
+.slide-products__inner{
   display: flex;
   flex-direction: column;
   width: rem(318px);
@@ -7,10 +7,15 @@
   }
 }
 
-.products-slide__pic{
+.slide-products__pic{
+  width: rem(215px);
+  height: rem(270px);
   margin-bottom: rem(10px);
+  img{
+    @extend %img;
+  }
 }
 
-.title-wrap{
+.slide-products__title{
   margin-bottom: rem(25px);
 }

@@ -1,5 +1,5 @@
 //----------------------<<sliders>>----------------------\\
-.slider-homepage, .products-slider{
+.slider-homepage, .slider-products{
   .slick-next:before, .slick-prev:before {
     content: "";
   }
@@ -61,7 +61,7 @@
 }
 
 //products slider arrows positioning
-.products-slider{
+.slider-products{
   .slick-next {
     right: -55px;
   }
