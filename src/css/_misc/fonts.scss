@@ -90,9 +90,6 @@
 
 }
 
-
-
-
 @font-face {
   font-family: 'alegreya_sansbold_italic';
   src: url('../assets/fonts/alegreyasans-bolditalic-webfont.eot');
@@ -105,9 +102,6 @@
   font-style: normal;
 
 }
-
-
-
 
 @font-face {
   font-family: 'alegreya_sansitalic';
@@ -122,9 +116,6 @@
 
 }
 
-
-
-
 @font-face {
   font-family: 'alegreya_sansmedium';
   src: url('../assets/fonts/alegreyasans-medium-webfont.eot');
@@ -138,9 +129,6 @@
 
 }
 
-
-
-
 @font-face {
   font-family: 'alegreya_sansmedium_italic';
   src: url('../assets/fonts/alegreyasans-mediumitalic-webfont.eot');
@@ -153,9 +141,6 @@
   font-style: normal;
 
 }
-
-
-
 
 @font-face {
   font-family: 'alegreya_sansregular';
@@ -172,22 +157,22 @@
 
 //----------------------<<mixins>>----------------------\\
 @mixin overlock($style: regular) {
-  @if $style == regular{
+  @if $style == regular {
     font-family: 'overlockregular';
   }
-  @if $style == bold{
+  @if $style == bold {
     font-family: 'overlockblack';
   }
-  @if $style == italic{
+  @if $style == italic {
     font-family: 'overlockitalic';
   }
 }
 
 @mixin alegreya($style: regular) {
-  @if $style == regular{
+  @if $style == regular {
     font-family: 'alegreya_sansregular';
   }
-  @if $style == bold{
+  @if $style == bold {
     font-family: 'alegreya_sansbold';
   }
 }
