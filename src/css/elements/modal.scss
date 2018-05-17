@@ -1,32 +1,32 @@
-#modal, #modal-continue{
+#modal-order, #modal-proceed {
   overflow: hidden;
 }
 
-.modal{
+.modal-order {
   @include alegreya();
+  display: flex;
   width: rem(680px);
   min-height: rem(380px);
   padding: rem(30px);
-  background: url('../assets/img/misc/secure.png') bottom right no-repeat, #e9e8e8;
   border-radius: 5px;
-  display: flex;
+  background: url('../assets/img/misc/secure.png') bottom right no-repeat, #e9e8e8;
 }
 
-.order{
+.order {
   width: 65%;
   padding-right: rem(30px);
   border-right: 1px solid $border-color;
 }
 
-.order__title{
+.order__title {
   margin-bottom: rem(20px);
 }
 
-.order-form{
+.form-order {
   margin-bottom: rem(30px);
 }
 
-.app-preview{
+.app-preview {
   width: rem(350px);
   margin-bottom: rem(20px);
   border: 1px solid $border-color;
@@ -34,109 +34,109 @@
   background: #dcdcdc;
 }
 
-.app-preview__item{
+.app-preview__item {
   display: flex;
-  align-items: center;
   height: rem(75px);
   padding: 0 rem(15px);
+  align-items: center;
 }
 
-.app-preview__pic{
+.app-preview__pic {
   overflow: hidden;
   width: rem(30px);
   height: rem(40px);
   margin-right: rem(10px);
   border-radius: 3px;
-  img{
+  img {
     @extend %img;
   }
 }
 
-.app-preview__count{
+.app-preview__count {
   overflow: hidden;
   width: rem(30px);
   margin-right: rem(25px);
+  text-align: center;
   border: 1px solid $border-color;
   border-radius: 5px;
-  text-align: center;
   background: #ffffff;
 }
 
-.digits{
+.input-digits {
   display: block;
   width: 100%;
   height: rem(20px);
   text-align: center;
   border: none;
-  background: none;
   outline: none;
   color: $maintext-dark;
+  background: none;
 }
 
-.count-arrows{
-  height: rem(20px);
+.count-arrows {
   @extend %product-btn-bg;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: rem(20px);
 }
 
-.count-arrows__up{
+.count-arrows__up {
   display: block;
   width: rem(15px);
   height: 100%;
-  img{
+  img {
     padding-bottom: rem(3px);
   }
 }
 
-.count-arrows__down{
+.count-arrows__down {
   display: block;
   width: rem(15px);
   height: 100%;
-  img{
+  img {
     padding-bottom: rem(3px);
   }
 }
 
-.app-preview__text{
+.app-preview__text {
   font-size: rem(20px);
   color: $maintext-dark;
 }
 
-.total-price{
+.total-price {
   display: flex;
   margin-bottom: rem(10px);
   font-size: rem(25px);
   color: $maintext-dark;
 }
 
-.total{
+.total-price__text {
   margin-right: rem(10px);
 }
 
-.credit-card{
-  width: rem(350px);
+.credit-card {
   position: relative;
+  width: rem(350px);
 }
 
-.credit-input{
+.input-credit {
   width: rem(350px);
   padding: rem(11px) rem(110px) rem(10px) rem(20px);
-  outline: none;
   font-size: rem(20px);
   border: 2px solid $nav-color;
   border-radius: 10px;
   box-shadow: 0 1px #c9c9c9 inset;
   color: $maintext-dark;
   background: #ffffff;
-  &::placeholder{
-    color: $maintext;
+  outline: none;
+  &::placeholder {
     font-size: rem(20px);
+    color: $maintext;
   }
 }
 
-.credit-btn{
+.btn-credit {
   @extend %product-btn-bg;
   position: absolute;
   top: rem(5.4px);
@@ -144,84 +144,93 @@
   width: rem(100px);
 }
 
-.order-info{
+.order__info {
   display: flex;
   align-items: center;
 }
 
-.order-info__pic{
+.order__info-pic {
   width: rem(30px);
   height: rem(30px);
   margin-right: rem(15px);
-  img{
+  img {
     display: block;
   }
 }
 
-.order-info__text{
+.order__info-text {
   font-size: rem(16px);
   color: $maintext-dark;
 }
 
-.payment{
+.payment {
   width: 35%;
   padding-left: rem(30px);
 }
 
-.payment__method{
+.payment__method {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: rem(5px);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: all .3s;
+  &:hover {
+    border-color: $nav-color;
+    box-shadow: 0 1px #c9c9c9 inset;
+    background: #ffffff;
+    transform: scale(.95);
+    .title-submain {
+      color: $maintext-dark;
+      transition: all .3;
+    }
+  }
 }
 
-.payment__svg{
-  fill: #002c60;
+.payment__svg {
   width: rem(30px);
   height: rem(30px);
+  fill: #002c60;
 }
 
 //----------------------<<continue>>----------------------\\
-.modal-continue{
+.modal-proceed {
   @include alegreya();
   width: rem(420px);
   min-height: rem(120px);
   padding: rem(20px) rem(50px) rem(15px);
-  background: #e9e8e8;
   border-radius: 5px;
+  background: #e9e8e8;
 }
 
-.continue__title{
+.proceed__title {
   margin-bottom: rem(20px);
 }
 
-.continue__choice{
+.proceed__choice {
   display: flex;
 }
 
-.yes{
-  border: none;
-  outline: none;
-}
-
-.yes, .no{
+.yes, .no {
   display: flex;
   align-items: center;
   padding: rem(5px) rem(15px);
   margin: 0;
   margin-right: rem(20px);
-  p{
-    display: block;
-  }
-  &:last-child{
+  &:last-child {
     margin-right: 0;
+  }
+  p {
+    display: block;
   }
 }
 
-.yes__pic, .no__pic{
+.yes__pic, .no__pic {
   width: rem(20px);
   height: rem(20px);
   margin-right: rem(20px);
-  img{
+  img {
     @extend %img;
   }
 }

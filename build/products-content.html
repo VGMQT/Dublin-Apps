@@ -42,19 +42,19 @@
 </section><section class="section">
 <div class="container">
 <div class="content-wrapper">
-<div class="products-content__title">
-<div class="main-wrapper">
+<div class="products-item__title">
+<div class="title-main-wrapper">
 <div class="title-main">iPad Application</div>
 <div class="title-submain">Lorem ipsum dolor sit amet.</div>
 </div>
 </div>
-<div class="products-content__pic">
+<div class="products-item__pic">
 <img src="assets/img/ipad/product-content.png" alt="iPad">
 </div>
-<div class="products-content__btn">
-<a href="#" class="btn trigger">Buy now</a>
+<div class="products-item__btn">
+<a href="#" class="btn trigger-order">Buy now</a>
 </div>
-<div class="products-content__desc">
+<div class="products-item__desc">
 <div class="title-main">iPad application description</div>
 <div class="desc">
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis culpa quisquam rem  voluptatem. Accusamus animi at cupiditate earum ex facere id impedit ipsam, maxime minus
@@ -66,7 +66,7 @@
   placeat possimus provident rerum sit sunt vel? Amet, eius enim eos explicabo iusto
   ratione!</p></div>
 </div>
-<div class="products-content__list">
+<div class="products-item__list">
 <div class="title-main">List of advantages</div>
 <ul class="list">
 <li class="list__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, corporis?</li>
@@ -80,51 +80,51 @@
 </div>
 </div>
 </section>
-<div id="modal">
-<div class="modal">
+<div id="modal-order">
+<div class="modal-order">
 <div class="order">
 <div class="order__title">
 <div class="title-main">Dublin's iPad Applications</div>
 <div class="title-submain">Lorem ipsum dolor sit amet.</div>
 </div>
-<form action="#" method="get" class="order-form">
+<form action="#" method="get" class="form-order">
 <ul class="app-preview">
 <li class="app-preview__item">
 <div class="app-preview__pic">
 <img src="assets/img/ipad/modal.png" alt="iPad">
 </div>
 <div class="app-preview__count">
-<input class="digits" type="number" value="1" max="999">
+<input type="number" value="1" max="999" class="input-digits">
 <div class="count-arrows">
-<a href="#" class="count-arrows__up"><img src="assets/img/misc/up.png" alt="arrow"></a>
-<a href="#" class="count-arrows__down"><img src="assets/img/misc/down.png" alt="arrow"></a>
+<a href="#" class="count-arrows__up"><img src="assets/img/misc/up.png" alt="Arrow Up"></a>
+<a href="#" class="count-arrows__down"><img src="assets/img/misc/down.png" alt="Arrow Down"></a>
 </div>
 </div>
 <div class="app-preview__text">iPad Application</div>
 </li>
 </ul>
 <div class="total-price">
-<div class="total">Total:</div>
-<div class="price">$155</div>
+<div class="total-price__text">Total:</div>
+<div class="total-price__price">$155</div>
 </div>
 <div class="credit-card">
-<input id="credit" type="tel" placeholder="Credit card number" class="credit-input">
-<div  class="btn contacts__btn credit-btn trigger-continue">Pay now</div>
+<input id="credit" type="tel" placeholder="Credit card number" class="input-credit">
+<div  class="btn btn-contacts btn-credit trigger-proceed">Pay now</div>
 </div>
-<div id="modal-continue">
-<div class="modal-continue">
-<div class="continue__title">
+<div id="modal-proceed">
+<div class="modal-proceed">
+<div class="proceed__title">
 <div class="title-main">Do you want to proceed?</div>
 <div class="title-submain">Lorem ipsum dolor sit amet.</div>
 </div>
-<div class="continue__choice">
-<a href="#" class="yes btn btn_download trigger">
+<div class="proceed__choice">
+<a href="#" class="btn btn-download yes trigger-order">
 <div class="yes__pic">
 <img src="assets/img/misc/check.png" alt="Yes">
 </div>
 <p>Yes</p>
 </a>
-<a href="#" class="no btn btn_download trigger">
+<a href="#" class="btn btn-download no trigger-order">
 <div class="no__pic">
 <img src="assets/img/misc/cancel.png" alt="No">
 </div>
@@ -134,15 +134,15 @@
 </div>
 </div>
 </form>
-<div class="order-info">
-<div class="order-info__pic">
+<div class="order__info">
+<div class="order__info-pic">
 <img src="assets/img/misc/i.png" alt="Info">
 </div>
-<div class="order-info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem esse neque nihil quae quisquam unde.</div>
+<div class="order__info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem esse neque nihil quae quisquam unde.</div>
 </div>
 </div>
 <div class="payment">
-<div class="payment__method">
+<a href="#" class="payment__method trigger-proceed">
 <svg class="payment__svg">
 <use xlink:href="assets/img/svg/sprite/socials-sprite.svg#paypal"></use>
 </svg>
@@ -150,7 +150,7 @@
 <div class="title-main">Paypal</div>
 <div class="title-submain">Lorem ipsum dolor.</div>
 </div>
-</div>
+</a>
 </div>
 </div>
 </div>

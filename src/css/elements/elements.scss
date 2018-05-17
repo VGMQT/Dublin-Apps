@@ -31,12 +31,6 @@
 //----------------------<<title, desc>>----------------------\\
 .title-main-wrapper {
   margin-bottom: rem(15px);
-  .title-main {
-    transition: color .5s;
-    &:hover {
-      color: $accentcolor;
-    }
-  }
 }
 
 .title-submain-wrapper {

@@ -146,7 +146,7 @@ $(document).ready(function () {
 
     //----------------------<<modal>>----------------------\\
     (function () {
-        $('#modal').iziModal({
+        $('#modal-order').iziModal({
             width: '42.5rem',
             radius: 5,
             overlayColor: 'rgba(0, 0, 0, 0.8)',
@@ -154,21 +154,21 @@ $(document).ready(function () {
             focusInput: false
         });
 
-        $('#modal-continue').iziModal({
+        $('#modal-proceed').iziModal({
             width: '26.25rem',
             radius: 5,
             overlayColor: 'rgba(0, 0, 0, 0.8)',
             focusInput: false
         });
 
-        $(document).on('click', '.trigger', function (event) {
+        $(document).on('click', '.trigger-order', function (event) {
             event.preventDefault();
-            $('#modal').iziModal('open');
+            $('#modal-order').iziModal('open');
         });
 
-        $(document).on('click', '.trigger-continue', function (event) {
+        $(document).on('click', '.trigger-proceed', function (event) {
             event.preventDefault();
-            $('#modal-continue').iziModal('open');
+            $('#modal-proceed').iziModal('open');
         });
     }());
 
@@ -180,7 +180,7 @@ $(document).ready(function () {
             var
                 $this = $(this),
                 container = $this.closest('.app-preview__item'),
-                qty = container.find('.digits'),
+                qty = container.find('.input-digits'),
                 count = parseInt(qty.val()) - 1;
 
             count = count < 1 ? 1 : count;
@@ -194,7 +194,7 @@ $(document).ready(function () {
             var
                 $this = $(this),
                 container = $this.closest('.app-preview__item'),
-                qty = container.find('.digits');
+                qty = container.find('.input-digits');
 
             qty.val(parseInt(qty.val()) + 1);
             qty.change();
@@ -204,7 +204,7 @@ $(document).ready(function () {
 
     //----------------------<<jquery-mask>>----------------------\\
     (function () {
-        $('.digits').mask('000');
+        $('.input-digits').mask('000');
         $('#credit').mask('0000-0000-0000-0000');
     }());
 

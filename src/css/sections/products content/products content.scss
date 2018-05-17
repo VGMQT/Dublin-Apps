@@ -1,14 +1,9 @@
-.products-content__title{
+.products-item__title{
   display: flex;
   justify-content: center;
-  .title-main{
-    &:hover{
-      color: $maintext-dark;
-    }
-  }
 }
 
-.products-content__pic{
+.products-item__pic{
   width: rem(690px);
   height: rem(380px);
   margin: auto;
@@ -17,13 +12,13 @@
   }
 }
 
-.products-content__btn{
+.products-item__btn{
   display: flex;
   justify-content: center;
   margin-bottom: rem(30px);
 }
 
-.products-content__desc{
+.products-item__desc{
   margin-bottom: rem(45px);
   .title-main{
     margin-bottom: rem(20px);
@@ -35,7 +30,7 @@
   }
 }
 
-.products-content__list{
+.products-item__list{
   margin: 0 rem(50px);
   .title-main{
     margin-bottom: rem(25px);

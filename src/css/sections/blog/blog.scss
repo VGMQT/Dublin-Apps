@@ -37,6 +37,14 @@
 
 .blog__main {
   width: 65%;
+  .title-main-wrapper{
+    .title-main{
+      transition: color .5s;
+      &:hover {
+        color: $accentcolor;
+      }
+    }
+  }
   .desc {
     margin-bottom: rem(15px);
   }
