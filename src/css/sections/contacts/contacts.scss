@@ -3,17 +3,17 @@
 }
 
 .contacts__form{
-  width: 50%;
+  width: 60%;
   border-right: 1px solid $border-color;
 }
 
-.formcts{
+.form-contacts{
   margin-top: rem(30px);
   margin-right: rem(75px);
   text-align: right;
 }
 
-.contacts__inputs{
+.contacts__inputs-wrapper{
   display: flex;
   flex-direction: column;
   margin-bottom: rem(15px);
@@ -30,8 +30,8 @@
   color: $maintext-dark;
   background: #ffffff;
   &::placeholder{
-    color: $maintext;
     font-size: rem(20px);
+    color: $maintext;
   }
   &:last-child{
     margin-bottom: 0;
@@ -43,21 +43,21 @@
   height: rem(90px);
 }
 
-.contacts__btn{
+.btn-contacts{
   display: inline-block;
   margin: 0;
   border: none;
   outline: none;
 }
 
-.contacts__geo{
+.contacts__info{
   width: 50%;
   margin-top: rem(30px);
   margin-left: rem(75px);
 }
 
-.contacts__geo-text{
-  padding: rem(5px) rem(20px);
+.contacts__address{
+  padding: rem(10px) rem(20px);
   margin-bottom: rem(15px);
   border: 2px solid $nav-color;
   border-radius: 10px;
@@ -65,16 +65,35 @@
   color: $maintext-dark;
   background: #ffffff;
   &::placeholder{
-    color: $maintext;
     font-size: rem(20px);
+    color: $maintext;
   }
   .title-main{
     font-size: rem(20px);
   }
 }
 
-.contacts__address{
+.contacts__address-elements-wrapper{
+  margin-bottom: rem(10px);
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+.address__list{
   margin: 0 rem(15px);
+}
+
+.address__item{
+  a{
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    color: $accentcolor;
+    transition: all .2s;
+    &:hover {
+      border-color: rgba($accentcolor, .8);
+    }
+  }
 }
 
 .contacts__map{

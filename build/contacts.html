@@ -44,29 +44,38 @@
 <div class="content-wrapper">
 <div class="contacts">
 <div class="contacts__form">
-<form class="formcts" action="#" method="get">
-<div class="contacts__inputs">
-<input class="contacts__input" placeholder="Your name" type="text"/>
-<input class="contacts__input" placeholder="E-mail address" type="email"/>
-<input class="contacts__input" placeholder="Phone number" type="tel"/>
-<textarea class="contacts__input contacts__text-area" placeholder="Your message"></textarea>
+<form action="#" method="get" class="form-contacts">
+<div class="contacts__inputs-wrapper">
+<input placeholder="Your name" type="text" class="contacts__input"/>
+<input placeholder="E-mail address" type="email" class="contacts__input"/>
+<input placeholder="Phone number" type="tel" class="contacts__input"/>
+<textarea placeholder="Your message" class="contacts__input contacts__text-area"></textarea>
 </div>
-<input type="submit" value="Submit" class="btn contacts__btn"/>
+<input type="submit" value="Submit" class="btn btn-contacts"/>
 </form>
 </div>
-<div class="contacts__geo">
-<div class="contacts__geo-text">
+<div class="contacts__info">
+<div class="contacts__address">
+<div class="contacts__address-elements-wrapper">
 <div class="title-main">Dublin's iPad Apps office</div>
-<ul class="contacts__address">
-<li class="address__item">Lorem ipsum.</li>
-<li class="address__item">Lorem ipsum.</li>
-<li class="address__item">Printing</li>
-<li class="address__item">
-<p>Email: email</p>
-<p>Email: email2</p>
-</li>
-<li class="address__item">Phone: 888-888</li>
+<ul class="address__list">
+<li class="address__item">Dublin, Ireland</li>
+<li class="address__item">Unit 9A King's Court, Parnell St, North City</li>
+<li class="address__item">10:00 - 18:00</li>
+<li class="address__item"><a href="tel: 888-888">Phone: 888-888</a></li>
 </ul>
+</div>
+<div class="contacts__address-elements-wrapper">
+<div class="title-main">Or write us on e-mail:</div>
+<ul class="address__list">
+<li class="address__item">
+<a href="mailto: dublinapps@dublin.com">dublinapps@dublin.com</a>
+</li>
+<li class="address__item">
+<a href="mailto: dublinapps@gmail.com">dublinapps@gmail.com</a>
+</li>
+</ul>
+</div>
 </div>
 <div id="map" class="contacts__map"></div>
 </div>

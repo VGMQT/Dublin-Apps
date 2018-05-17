@@ -119,8 +119,8 @@ $(document).ready(function () {
             var
                 $this = $(this),
                 item = $this.closest('.tab-number'),
-                container = $this.closest('.demo-mainblock'),
-                content = container.find('.demo-mainblock__main'),
+                container = $this.closest('.product-demonstration'),
+                content = container.find('.product-demonstration__content'),
                 ndx = item.index(),
                 activeItem = content.filter('.active'),
                 reqItem = content.eq(ndx),

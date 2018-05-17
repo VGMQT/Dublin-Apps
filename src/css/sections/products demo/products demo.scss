@@ -1,14 +1,7 @@
-.product-section{
-  .content-wrapper{
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-.demo-mainblock{
+.product-demonstration{
   position: relative;
   padding: rem(50px);
-  margin: 0 rem(80px);
+  margin: rem(-100px) rem(80px) 0;
   border: 1px solid rgba($maintext, .3);
   background: #edeeef;
   .product__pic{
@@ -20,17 +13,13 @@
   }
 }
 
-.demo-mainblock__main{
-  display: none;
-}
-
 .tab-numbers{
   position: absolute;
-  bottom: 97.8%;
+  bottom: 98.2%;
   left: 50%;
-  margin-left: rem(-197.5px);
   display: flex;
   justify-content: center;
+  margin-left: rem(-197.5px);
   .active{
     border-color: #8eb1e3;
     background: rgba(42,102,186,1);
@@ -41,10 +30,10 @@
 
 .tab-number{
   position: relative;
-  text-align: center;
   width: rem(35px);
   height: rem(35px);
   margin-right: rem(85px);
+  text-align: center;
   font-size: rem(20px);
   border: 1px solid #c7c8cb;
   border-radius: 50%;
@@ -57,14 +46,14 @@
     position: absolute;
     top: 50%;
     left: 100%;
-    margin-top: rem(-4px);
-    content: '';
-    height: rem(8px);
     width: rem(87px);
+    height: rem(8px);
+    margin-top: rem(-4px);
     border: 1px solid #c7c8cb;
     background: rgba(199,199,199,1);
     background: linear-gradient(to bottom, rgba(199,199,199,1) 0%, rgba(232,232,239,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7c7c7', endColorstr='#e8e8ef', GradientType=0 );
+    content: '';
   }
   &:last-child{
     margin-right: 0;
@@ -72,20 +61,30 @@
       display: none;
     }
   }
+  &:hover{
+    a{
+      transform: rotate(360deg);
+    }
+  }
   a{
     display: block;
     width: 100%;
     height: 100%;
     color: #ffffff;
+    transition: all .5s;
   }
 }
 
-.demo-mainblock__title{
-  text-align: center;
-  margin-bottom: rem(40px);
+.product-demonstration__content{
+  display: none;
 }
 
-.demo-mainblock__desc{
+.product-demonstration__title{
+  margin-bottom: rem(40px);
+  text-align: center;
+}
+
+.product-demonstration__desc{
   margin-bottom: rem(40px);
 }
 
@@ -93,11 +92,16 @@
   display: flex;
   justify-content: space-between;
   margin: 0 rem(170px) rem(20px);
+}
+
+.passages__pic{
+  width: rem(90px);
+  height: rem(110px);
   img{
-    display: block;
+    @extend %img;
   }
 }
 
-.btn_download{
+.btn-download{
   @extend %product-btn-bg;
 }

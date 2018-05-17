@@ -108,11 +108,11 @@
   font-size: rem(16px);
   color: $maintext;
   a {
-    border-bottom: 0 solid rgba($accentcolor, .8);
+    border-bottom: 2px solid transparent;
     color: $accentcolor;
     transition: all .2s;
     &:hover {
-      border-width: 2px;
+      border-color: rgba($accentcolor, .8);
     }
   }
 }

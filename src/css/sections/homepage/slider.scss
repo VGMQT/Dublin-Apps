@@ -42,3 +42,21 @@
     @extend %img;
   }
 }
+
+.btn-slider {
+  position: absolute;
+  right: 0;
+  bottom: rem(-80px);
+  display: block;
+  width: rem(180px);
+  font-size: rem(25px);
+  &:after {
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 183px;
+    height: 24px;
+    background: url('../assets/img/buttons/btn-shadow.png');
+    content: '';
+  }
+}
