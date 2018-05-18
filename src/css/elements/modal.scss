@@ -85,8 +85,8 @@
   display: block;
   width: rem(15px);
   height: 100%;
-  img {
-    padding-bottom: rem(3px);
+  i {
+    margin: 6px auto 0;
   }
 }
 
@@ -94,8 +94,8 @@
   display: block;
   width: rem(15px);
   height: 100%;
-  img {
-    padding-bottom: rem(3px);
+  i {
+    margin: 6px auto 0;
   }
 }
 
@@ -227,10 +227,7 @@
 }
 
 .yes__pic, .no__pic {
-  width: rem(20px);
-  height: rem(20px);
+  width: rem(23px);
+  height: rem(23px);
   margin-right: rem(20px);
-  img {
-    @extend %img;
-  }
 }

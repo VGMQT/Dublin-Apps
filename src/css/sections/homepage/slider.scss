@@ -56,7 +56,8 @@
     bottom: -50px;
     width: 183px;
     height: 24px;
-    background: url('../assets/img/buttons/btn-shadow.png');
+    background: url('../assets/img/misc/spritesheet.png') no-repeat;
+    background-position: -10px -123px;
     content: '';
   }
 }

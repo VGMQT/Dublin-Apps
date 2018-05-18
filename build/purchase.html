@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=1020">
 <link rel="stylesheet" href="css/vendor.css">
 <link rel="stylesheet" href="css/main.min.css">
-<title>Products
+<title>Purchase page | Dublin Apps
 </title></head><body>
 <div class="wrapper">
 <main class="main-content"><header class="header">
 <div class="container">
-<div class="logo">
+<a href="index.html" class="logo">
 <div class="logo__pic">
 <img src="assets/img/logo/logo.png" alt="Logotype">
 </div>
@@ -18,18 +18,19 @@
 <div class="logo__title">Dublin Apps</div>
 <div class="logo__desc">iPad applications</div>
 </div>
-</div>
+</a>
 <nav class="nav">
 <ul class="nav__list"><li class="nav__item"><a href="index.html">Home</a></li>
-<li class="nav__item active"><a href="products.html">iPad apps</a></li>
+<li class="nav__item active"><a href="apps.html">Apps</a></li>
 <li class="nav__item"><a href="blog.html">Blog</a></li>
+<li class="nav__item"><a href="purchase.html">Quick Buy</a></li>
 <li class="nav__item"><a href="contacts.html">Contact us</a></li></ul>
 </nav>
 </div>
 </header><section class="pagetitle">
 <div class="container">
 <div class="pagetitle__title">
-<div class="title-main">Dublin's iPad applications</div>
+<div class="title-main">Purchase page</div>
 <div class="title-submain">Lorem ipsum dolor sit amet.</div>
 </div>
 <div class="search">
@@ -49,7 +50,7 @@
 </div>
 </div>
 <div class="products-item__pic">
-<img src="assets/img/ipad/product-content.png" alt="iPad">
+<img src="assets/img/ipad/products-item-ipad.png" alt="iPad">
 </div>
 <div class="products-item__btn">
 <a href="#" class="btn trigger-order">Buy now</a>
@@ -79,8 +80,7 @@
 </div>
 </div>
 </div>
-</section>
-<div id="modal-order">
+</section><div id="modal-order">
 <div class="modal-order">
 <div class="order">
 <div class="order__title">
@@ -91,13 +91,13 @@
 <ul class="app-preview">
 <li class="app-preview__item">
 <div class="app-preview__pic">
-<img src="assets/img/ipad/modal.png" alt="iPad">
+<i class="sprite sprite-app-preview-img"></i>
 </div>
 <div class="app-preview__count">
 <input type="number" value="1" max="999" class="input-digits">
 <div class="count-arrows">
-<a href="#" class="count-arrows__up"><img src="assets/img/misc/up.png" alt="Arrow Up"></a>
-<a href="#" class="count-arrows__down"><img src="assets/img/misc/down.png" alt="Arrow Down"></a>
+<a href="#" class="count-arrows__up"><i class="sprite sprite-count-arrows-up"></i></a>
+<a href="#" class="count-arrows__down"><i class="sprite sprite-count-arrows-down"></i></a>
 </div>
 </div>
 <div class="app-preview__text">iPad Application</div>
@@ -109,34 +109,12 @@
 </div>
 <div class="credit-card">
 <input id="credit" type="tel" placeholder="Credit card number" class="input-credit">
-<div  class="btn btn-contacts btn-credit trigger-proceed">Pay now</div>
-</div>
-<div id="modal-proceed">
-<div class="modal-proceed">
-<div class="proceed__title">
-<div class="title-main">Do you want to proceed?</div>
-<div class="title-submain">Lorem ipsum dolor sit amet.</div>
-</div>
-<div class="proceed__choice">
-<a href="#" class="btn btn-download yes trigger-order">
-<div class="yes__pic">
-<img src="assets/img/misc/check.png" alt="Yes">
-</div>
-<p>Yes</p>
-</a>
-<a href="#" class="btn btn-download no trigger-order">
-<div class="no__pic">
-<img src="assets/img/misc/cancel.png" alt="No">
-</div>
-<p>No</p>
-</a>
-</div>
-</div>
+<div class="btn btn-contacts btn-credit trigger-proceed">Pay now</div>
 </div>
 </form>
 <div class="order__info">
 <div class="order__info-pic">
-<img src="assets/img/misc/i.png" alt="Info">
+<i class="sprite sprite-info"></i>
 </div>
 <div class="order__info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem esse neque nihil quae quisquam unde.</div>
 </div>
@@ -153,8 +131,28 @@
 </a>
 </div>
 </div>
+</div><div id="modal-proceed">
+<div class="modal-proceed">
+<div class="proceed__title">
+<div class="title-main">Do you want to proceed?</div>
+<div class="title-submain">Lorem ipsum dolor sit amet.</div>
 </div>
-</main>
+<div class="proceed__choice">
+<a href="#" class="btn btn-download yes trigger-order">
+<div class="yes__pic">
+<i class="sprite sprite-yes"></i>
+</div>
+<p>Yes</p>
+</a>
+<a href="#" class="btn btn-download no trigger-order">
+<div class="no__pic">
+<i class="sprite sprite-no"></i>
+</div>
+<p>No</p>
+</a>
+</div>
+</div>
+</div></main>
 </div>
 <footer class="footer">
 <div class="container">

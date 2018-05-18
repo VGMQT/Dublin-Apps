@@ -40,7 +40,9 @@
   .title-main-wrapper{
     .title-main{
       transition: color .5s;
-      &:hover {
+    }
+    &:hover {
+      .title-main{
         color: $accentcolor;
       }
     }

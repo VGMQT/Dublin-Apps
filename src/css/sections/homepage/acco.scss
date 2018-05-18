@@ -8,9 +8,8 @@
         padding-right: rem(14px);
         margin-right: rem(12px);
         border-radius: 50%;
-        background: url(../assets/img/misc/spritesheet.png) center no-repeat;
-        background-position: -10px -107px;
-        transition: all .2s;
+        background: url(../assets/img/misc/bullet.png) center no-repeat;
+        transition: all .2s, background .5s;
         content: '';
       }
     }
@@ -40,9 +39,8 @@
     padding-right: rem(14px);
     margin-right: rem(12px);
     border-radius: 50%;
-    background: url(../assets/img/misc/spritesheet.png) center no-repeat;
-    background-position: -10px -141px;
-    transition: all .2s;
+    background: url(../assets/img/misc/acco-bullet.png) center no-repeat;
+    transition: all .2s, background .5s;
     content: '';
   }
   &:hover {

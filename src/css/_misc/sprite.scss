@@ -1,76 +1,101 @@
 .sprite {
-  background: url(../assets/img/misc/spritesheet.png) no-repeat;
+  background-image: url('../assets/img/misc/spritesheet.png');
+  background-repeat: no-repeat;
   display: block;
+}
+
+.sprite-app-preview-img {
+  width: 30px;
+  height: 40px;
+  background-position: -10px -10px;
 }
 
 .sprite-browse {
   width: 33px;
   height: 33px;
-  background-position: -10px -10px;
+  background-position: -10px -70px;
 }
 
-.sprite-btn-shadow {
+.sprite-btn-slider-shadow {
   width: 185px;
   height: 24px;
-  background-position: -10px -63px;
+  background-position: -10px -123px;
 }
 
 .sprite-bullet {
   width: 14px;
   height: 14px;
-  background-position: -10px -107px;
+  background-position: -10px -167px;
 }
 
-.sprite-bullet2 {
-  width: 14px;
-  height: 14px;
-  background-position: -10px -141px;
+.sprite-count-arrows-down {
+  width: 8px;
+  height: 7px;
+  background-position: -10px -201px;
+}
+
+.sprite-count-arrows-up {
+  width: 8px;
+  height: 7px;
+  background-position: -10px -228px;
 }
 
 .sprite-develop {
   width: 33px;
   height: 33px;
-  background-position: -10px -175px;
+  background-position: -10px -255px;
 }
 
 .sprite-discover {
   width: 33px;
   height: 33px;
-  background-position: -10px -228px;
+  background-position: -10px -308px;
 }
 
-.sprite-logo {
-  width: 37px;
-  height: 37px;
-  background-position: -10px -281px;
+.sprite-info {
+  width: 30px;
+  height: 30px;
+  background-position: -10px -361px;
 }
 
-.sprite-news-slide-ar-l {
-  width: 24px;
-  height: 27px;
-  background-position: -10px -338px;
+.sprite-no {
+  width: 23px;
+  height: 23px;
+  background-position: -10px -411px;
 }
 
-.sprite-news-slide-ar-r {
-  width: 24px;
-  height: 27px;
-  background-position: -10px -385px;
+.sprite-search {
+  width: 13px;
+  height: 13px;
+  background-position: -10px -454px;
 }
 
-.sprite-slider-arrow-l {
+.sprite-slider-homepage-next {
   width: 39px;
   height: 39px;
-  background-position: -10px -432px;
+  background-position: -10px -487px;
 }
 
-.sprite-slider-arrow-r {
+.sprite-slider-homepage-prev {
   width: 39px;
   height: 39px;
-  background-position: -10px -491px;
+  background-position: -10px -546px;
 }
 
-.sprite-tweet-line {
-  width: 1073px;
-  height: 1px;
-  background-position: -10px -550px;
+.sprite-slider-news-next {
+  width: 24px;
+  height: 27px;
+  background-position: -10px -605px;
+}
+
+.sprite-slider-news-prev {
+  width: 24px;
+  height: 27px;
+  background-position: -10px -652px;
+}
+
+.sprite-yes {
+  width: 23px;
+  height: 23px;
+  background-position: -10px -699px;
 }
