@@ -26,15 +26,6 @@ body, html {
   height: 100%;
 }
 
-input[type='number'] {
-  -moz-appearance: textfield;
-}
-
-input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
 .wrapper {
   position: relative;
   min-width: $container-width + 20;
@@ -92,6 +83,15 @@ ul {
 
 li {
   list-style: none;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 footer {

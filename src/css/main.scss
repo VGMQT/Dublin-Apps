@@ -17,35 +17,29 @@ $border-color: rgba($maintext, .3);
 
 //elements
 @import "elements/elements";
+@import "elements/header";
+@import "elements/footer";
+@import "elements/pagetitle";
 @import "elements/modal";
 
 //----------------------<<sections>>----------------------\\
 
 //homepage
-@import "sections/header";
 @import "sections/homepage/slider";
 @import "sections/homepage/top-apps";
-@import "sections/homepage/product";
+@import "sections/homepage/product-demo";
 @import "sections/homepage/acco";
-@import "sections/footer";
 
 //productspage
-@import "sections/pagetitle";
-@import "sections/productspage/productsmain";
-@import "sections/productspage/recentapps";
-
-//products demo
-@import "sections/products demo/products demo";
+@import "sections/apps/apps";
+@import "sections/apps/apps-recent";
+@import "sections/apps/purchase";
+@import "sections/apps/ipad-app";
 
 //blog
 @import "sections/blog/blog";
 @import "sections/blog/sidebar";
-
-//blog content
-@import "sections/blog content/blog-content";
-
-//products content
-@import "sections/products content/products content";
+@import "sections/blog/blog-article";
 
 //contacts
 @import "sections/contacts/contacts";
